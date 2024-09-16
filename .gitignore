@@ -5,9 +5,11 @@
 *.swp
 .DS_Store
 .atom/
+.build/
 .buildlog/
 .history
 .svn/
+.swiftpm/
 migrate_working_dir/
 
 # IntelliJ related
@@ -34,6 +36,7 @@ migrate_working_dir/
 .packages
 .pub-cache/
 .pub/
+pubspec.lock
 build/
 flutter_*.png
 linked_*.ds
@@ -83,6 +86,9 @@ unlinked_spec.ds
 **/ios/ServiceDefinitions.json
 **/ios/Runner/GeneratedPluginRegistrant.*
 
+# Podfile lock
+**/Podfile.lock
+
 # Coverage
 coverage/
 
@@ -110,3 +116,11 @@ app.*.map.json
 !.idea/codeStyles/
 !.idea/dictionaries/
 !.idea/runConfigurations/
+
+# Exceptions Generated files.
+lib/**/*.inject.summary.dart
+lib/**/*.inject.dart
+lib/**/*.g.dart
+lib/**/*.freezed.dart
+lib/**/*.gen.dart
+lib/**/*.config.dart
